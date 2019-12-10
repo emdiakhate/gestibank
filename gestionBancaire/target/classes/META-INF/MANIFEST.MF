@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: gestionBancaire
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: mdiakhate
+Implementation-Vendor-Id: com.emd
+Build-Jdk: 1.8.0_191
+Implementation-URL: http://projects.spring.io/spring-boot/gestionBanca
+ ire/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
