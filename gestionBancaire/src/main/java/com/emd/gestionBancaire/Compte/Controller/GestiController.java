@@ -20,6 +20,7 @@ public class GestiController {
 	
 	@Autowired
 	IGestiBank gestiMetier;
+	
 	@Autowired
 	private ClientRepository clientRepository;
 	
