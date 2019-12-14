@@ -1,9 +1,11 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.Operation.Entities;
 
 import java.util.Date;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+
+import com.emd.gestionBancaire.Compte.Entities.Compte;
 
 @Entity
 @DiscriminatorValue("Depot")

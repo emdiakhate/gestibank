@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.User.Entities;
 
 import java.io.Serializable;
 
@@ -7,6 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+
+import com.emd.gestionBancaire.Compte.Entities.DemandeCompte;
 
 @Entity
 public class Guest implements Serializable {

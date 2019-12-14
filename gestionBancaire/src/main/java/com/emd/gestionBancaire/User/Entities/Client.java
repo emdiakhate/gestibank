@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.User.Entities;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+
+import com.emd.gestionBancaire.Compte.Entities.Compte;
 
 @Entity
 public class Client implements Serializable{

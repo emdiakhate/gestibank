@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.Compte.Entities;
 
 import java.io.Serializable;
 
@@ -9,6 +9,9 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+
+import com.emd.gestionBancaire.User.Entities.Admin;
+import com.emd.gestionBancaire.User.Entities.Guest;
 
 @Entity
 public class DemandeCompte implements Serializable {

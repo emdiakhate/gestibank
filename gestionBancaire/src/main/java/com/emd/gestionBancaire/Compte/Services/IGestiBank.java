@@ -1,16 +1,14 @@
-package com.emd.gestionBancaire.metier;
+package com.emd.gestionBancaire.Compte.Services;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.springframework.data.domain.Page;
-import org.springframework.stereotype.Repository;
 
-import com.emd.gestionBancaire.entities.Agent;
-import com.emd.gestionBancaire.entities.Client;
-import com.emd.gestionBancaire.entities.Compte;
-import com.emd.gestionBancaire.entities.DemandeCompte;
-import com.emd.gestionBancaire.entities.Operation;
+import com.emd.gestionBancaire.Compte.Entities.Compte;
+import com.emd.gestionBancaire.Compte.Entities.DemandeCompte;
+import com.emd.gestionBancaire.Operation.Entities.Operation;
+import com.emd.gestionBancaire.User.Entities.Client;
 
 
 public interface IGestiBank {

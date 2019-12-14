@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.Compte.Entities;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -16,6 +16,9 @@ import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+
+import com.emd.gestionBancaire.Operation.Entities.Operation;
+import com.emd.gestionBancaire.User.Entities.Client;
 
 
 

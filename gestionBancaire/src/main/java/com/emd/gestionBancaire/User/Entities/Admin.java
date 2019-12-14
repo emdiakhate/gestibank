@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.User.Entities;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
+import com.emd.gestionBancaire.Compte.Entities.DemandeCompte;
 
 @Entity
 public class Admin implements Serializable {

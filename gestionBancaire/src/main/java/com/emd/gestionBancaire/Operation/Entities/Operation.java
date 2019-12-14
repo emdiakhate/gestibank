@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.Operation.Entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -13,6 +13,8 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+import com.emd.gestionBancaire.Compte.Entities.Compte;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)

@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.metier;
+package com.emd.gestionBancaire.Compte.Services;
 
 import java.util.Collection;
 import java.util.Date;
@@ -7,26 +7,24 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.emd.gestionBancaire.DAO.AdminRepository;
-import com.emd.gestionBancaire.DAO.AgentRepository;
-import com.emd.gestionBancaire.DAO.ClientRepository;
-import com.emd.gestionBancaire.DAO.CompteRepository;
-import com.emd.gestionBancaire.DAO.DemandeRepository;
-import com.emd.gestionBancaire.DAO.OperationRepository;
-import com.emd.gestionBancaire.entities.Admin;
-import com.emd.gestionBancaire.entities.Agent;
-import com.emd.gestionBancaire.entities.Client;
-import com.emd.gestionBancaire.entities.Compte;
-import com.emd.gestionBancaire.entities.CompteCSansDecouv;
-import com.emd.gestionBancaire.entities.CompteCourant;
-import com.emd.gestionBancaire.entities.DemandeCompte;
-import com.emd.gestionBancaire.entities.Operation;
-import com.emd.gestionBancaire.entities.Retirer;
-import com.emd.gestionBancaire.entities.Verser;
+import com.emd.gestionBancaire.Compte.DAO.CompteRepository;
+import com.emd.gestionBancaire.Compte.DAO.DemandeRepository;
+import com.emd.gestionBancaire.Compte.Entities.Compte;
+import com.emd.gestionBancaire.Compte.Entities.CompteCSansDecouv;
+import com.emd.gestionBancaire.Compte.Entities.CompteCourant;
+import com.emd.gestionBancaire.Compte.Entities.DemandeCompte;
+import com.emd.gestionBancaire.Operation.DAO.OperationRepository;
+import com.emd.gestionBancaire.Operation.Entities.Operation;
+import com.emd.gestionBancaire.Operation.Entities.Retirer;
+import com.emd.gestionBancaire.Operation.Entities.Verser;
+import com.emd.gestionBancaire.User.DAO.AdminRepository;
+import com.emd.gestionBancaire.User.DAO.AgentRepository;
+import com.emd.gestionBancaire.User.DAO.ClientRepository;
+import com.emd.gestionBancaire.User.Entities.Agent;
+import com.emd.gestionBancaire.User.Entities.Client;
 
 @Service
 @Transactional

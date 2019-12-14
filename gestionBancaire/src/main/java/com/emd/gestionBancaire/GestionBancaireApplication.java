@@ -2,7 +2,6 @@ package com.emd.gestionBancaire;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -13,25 +12,14 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-import com.emd.gestionBancaire.DAO.AdminRepository;
-import com.emd.gestionBancaire.DAO.AgentRepository;
-import com.emd.gestionBancaire.DAO.ClientRepository;
-import com.emd.gestionBancaire.DAO.CompteRepository;
-import com.emd.gestionBancaire.DAO.DemandeRepository;
-import com.emd.gestionBancaire.DAO.GuestRepository;
-import com.emd.gestionBancaire.DAO.OperationRepository;
-import com.emd.gestionBancaire.entities.Admin;
-import com.emd.gestionBancaire.entities.Agent;
-import com.emd.gestionBancaire.entities.Client;
-import com.emd.gestionBancaire.entities.Compte;
-import com.emd.gestionBancaire.entities.CompteCSansDecouv;
-import com.emd.gestionBancaire.entities.CompteCourant;
-import com.emd.gestionBancaire.entities.CompteEpargne;
-import com.emd.gestionBancaire.entities.DemandeCompte;
-import com.emd.gestionBancaire.entities.Guest;
-import com.emd.gestionBancaire.entities.Retirer;
-import com.emd.gestionBancaire.entities.Verser;
-import com.emd.gestionBancaire.metier.IGestiBank;
+import com.emd.gestionBancaire.Compte.DAO.CompteRepository;
+import com.emd.gestionBancaire.Compte.DAO.DemandeRepository;
+import com.emd.gestionBancaire.Compte.Services.IGestiBank;
+import com.emd.gestionBancaire.Operation.DAO.OperationRepository;
+import com.emd.gestionBancaire.User.DAO.AdminRepository;
+import com.emd.gestionBancaire.User.DAO.AgentRepository;
+import com.emd.gestionBancaire.User.DAO.ClientRepository;
+import com.emd.gestionBancaire.User.DAO.GuestRepository;
 
 @SpringBootApplication
 public class GestionBancaireApplication implements CommandLineRunner {

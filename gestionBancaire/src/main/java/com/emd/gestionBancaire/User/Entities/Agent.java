@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.User.Entities;
 
 import java.io.Serializable;
 import java.util.Collection;

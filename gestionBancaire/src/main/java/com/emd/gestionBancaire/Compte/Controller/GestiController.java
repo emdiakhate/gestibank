@@ -1,4 +1,4 @@
-package com.emd.gestionBancaire.controller;
+package com.emd.gestionBancaire.Compte.Controller;
 
 import java.util.List;
 
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.emd.gestionBancaire.DAO.ClientRepository;
-import com.emd.gestionBancaire.entities.Client;
-import com.emd.gestionBancaire.entities.Compte;
-import com.emd.gestionBancaire.metier.IGestiBank;
+import com.emd.gestionBancaire.Compte.Entities.Compte;
+import com.emd.gestionBancaire.Compte.Services.IGestiBank;
+import com.emd.gestionBancaire.User.DAO.ClientRepository;
+
 
 @CrossOrigin()
 @RestController

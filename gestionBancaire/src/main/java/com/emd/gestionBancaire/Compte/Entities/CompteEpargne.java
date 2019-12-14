@@ -1,9 +1,11 @@
-package com.emd.gestionBancaire.entities;
+package com.emd.gestionBancaire.Compte.Entities;
 
 import java.util.Date;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+
+import com.emd.gestionBancaire.User.Entities.Client;
 
 
 @Entity
